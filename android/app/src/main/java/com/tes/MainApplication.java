@@ -3,6 +3,8 @@ package com.tes;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import org.wonday.pdf.RCTPdfView;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -13,7 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 import com.rnfs.RNFSPackage;
 import com.filepicker.FilePickerPackage;
-import com.keyee.pdfview.PDFView;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -26,8 +27,9 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new PDFView(),
           new MainReactPackage(),
+            new RNFetchBlobPackage(),
+            new RCTPdfView(),
           new PickerPackage(),
           new ImagePickerPackage(),
           new RNFSPackage(),

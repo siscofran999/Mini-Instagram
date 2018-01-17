@@ -9,7 +9,8 @@ import {
   AppRegistry
 } from 'react-native';
 
-import AppsChatting from './AppsChatting/Route'
-//import App from './App/index'
+import AppSosmed from './AppSosmed/Route'
+import TesAlgoritma from './TesAlgoritma/tes'
+//import PushNotification from './PushNotification/index'
 
-AppRegistry.registerComponent('tes', () => AppsChatting);
+AppRegistry.registerComponent('tes', () => AppSosmed);
